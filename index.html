@@ -14,34 +14,14 @@
 
     <title>Frontend Mentor | Results summary component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: #3e52a3;
-        color: #7857ff;
-        color: #2e2be9;
-        color: #4e21ca;
-        color: #2421ca00;
-        color: #c8c7ff;
-        color: #303b5a;
-        color: #ff5757;
-        color: #ffb01f;
-        color: #00bd91;
-        color: #1125d4;
-      }
-    </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="flex items-center justify-center h-screen">
     <div
-      class="container max-w-xl flex h-96 shadow-xl shadow-[#c8c7ff]/30 rounded-3xl"
+      class="container max-w-xs md:max-w-xl flex flex-col md:flex-row md:h-96 shadow-xl shadow-[#c8c7ff]/30 rounded-3xl"
     >
       <div
-        class="bg-gradient-to-t from-[#2e2be9] to-[#7857ff] rounded-3xl flex flex-col items-center w-[50%] text-[#ffffff] p-6"
+        class="bg-gradient-to-t from-[#2e2be9] to-[#7857ff] rounded-3xl flex flex-col items-center md:w-[50%] text-[#ffffff] p-6"
       >
         <h2 class="text-[#c8c7ff] font-medium mb-6">Your Result</h2>
         <div
@@ -51,11 +31,11 @@
           <span class="text-[#c8c7ff]/70 text-xs">of 100</span>
         </div>
         <h3 class="text-2xl font-medium mb-2">Great</h3>
-        <p class="text-center text-[#c8c7ff] text-sm w-48">
+        <p class="text-center text-[#c8c7ff] text-sm w-56 md:w-48">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
-      <div class="w-[50%] p-6">
+      <div class="md:w-[50%] p-6">
         <h2 class="text-[#303b5a] font-medium mb-4">Summary</h2>
         <ul class="flex flex-col space-y-4 text-sm font-medium mb-8">
           <li
@@ -118,12 +98,5 @@
         </button>
       </div>
     </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </body>
 </html>
